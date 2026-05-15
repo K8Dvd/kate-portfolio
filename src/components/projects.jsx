@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import project1 from '../assets/project1.jpg'
 import project2 from '../assets/project2.jpg'
 import project3 from '../assets/project3.jpg'
@@ -119,11 +120,13 @@ function Projects() {
         {/* CTA */}
         <div className="mt-16 flex justify-center">
 
-          <button className="rounded-full bg-[#3A0519] px-8 py-3 text-sm font-semibold text-white transition duration-300 hover:bg-[#A53860]">
+          <Link
+            to="/projects"
+            className="rounded-full bg-[#3A0519] px-8 py-3 text-sm font-semibold text-white transition duration-300 hover:bg-[#A53860]">
 
             View All Projects
 
-          </button>
+          </Link>
 
         </div>
 

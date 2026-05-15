@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import about1 from '../assets/about1.jpg'
 import about2 from '../assets/about2.jpg'
 import about3 from '../assets/about3.jpg'
@@ -66,11 +67,13 @@ function About() {
           </p>
 
           {/* CTA */}
-          <button className="mt-10 rounded-full bg-[#3A0519] px-8 py-3 text-sm font-semibold text-white transition duration-300 hover:bg-[#A53860]">
+         <Link
+        to="/about"
+        className="mt-10 inline-block rounded-full bg-[#3A0519] px-8 py-3 text-sm font-semibold text-white transition duration-300 hover:bg-[#A53860]">
 
-            Know More About Me
+        Know More About Me
 
-          </button>
+        </Link>
 
         </div>
 

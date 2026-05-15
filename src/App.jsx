@@ -1,22 +1,42 @@
-import Navbar from './components/navbar'
-import Hero from './components/hero'
-import About from './components/about'
-import Projects from './components/projects'
-import Achievements from './components/achievements'
-import Recommendations from './components/recommendations'
-import Contact from './components/contact'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
+import Home from './pages/Home'
+import AboutPage from './pages/About'
+import ProjectsPage from './pages/Projects'
+import AchievementsPage from './pages/Achievements'
 
 function App() {
+
   return (
-    <>
-      <Navbar />
-      <Hero />
-      <About />
-      <Projects />
-      <Achievements />
-      <Recommendations />
-      <Contact />
-    </>
+
+    <BrowserRouter>
+
+      <Routes>
+
+        <Route
+          path="/"
+          element={<Home />}
+        />
+
+        <Route
+          path="/about"
+          element={<AboutPage />}
+        />
+
+        <Route
+          path="/projects"
+          element={<ProjectsPage />}
+        />
+
+        <Route
+          path="/achievements"
+          element={<AchievementsPage />}
+        />
+
+      </Routes>
+
+    </BrowserRouter>
+
   )
 }
 

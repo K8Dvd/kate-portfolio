@@ -1,19 +1,20 @@
 import { Link } from 'react-router-dom'
-import project1 from '../assets/project1.jpg'
+import { useState } from 'react'
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'
+
+import marketroots from '/projects/marketroots.png'
 import project2 from '../assets/project2.jpg'
 import project3 from '../assets/project3.jpg'
 
 function Projects() {
-
   const projects = [
     {
-      image: project1,
+      image: marketroots,
       title: 'Portfolio Website',
       category: 'Frontend Development',
       description:
         'A visually expressive portfolio focused on interactive storytelling and modern web experiences.',
     },
-
     {
       image: project2,
       title: 'Student Management System',
@@ -21,7 +22,6 @@ function Projects() {
       description:
         'A responsive academic management platform designed for organization, usability, and efficiency.',
     },
-
     {
       image: project3,
       title: 'Creative UI Exploration',
@@ -31,109 +31,139 @@ function Projects() {
     },
   ]
 
+  const [current, setCurrent] = useState(0)
+
+  const nextSlide = () => {
+    setCurrent((prev) => (prev === projects.length - 1 ? 0 : prev + 1))
+  }
+
+  const prevSlide = () => {
+    setCurrent((prev) => (prev === 0 ? projects.length - 1 : prev - 1))
+  }
+
   return (
+    <section className="bg-white px-6 py-20 md:px-12">
+      <div className="mx-auto max-w-[1200px]">
 
-    <section className="bg-white px-6 py-24 md:px-12">
-
-      <div className="mx-auto max-w-[1500px]">
-
-        {/* TOP CONTENT */}
-        <div className="max-w-3xl">
-
-          {/* LABEL */}
-          <p className="text-sm font-semibold tracking-[0.3em] text-[#3A0519]">
+        {/* HEADER */}
+        <div className="max-w-2xl">
+          <p className="text-xs font-semibold tracking-[0.3em] text-[#3A0519]">
             SELECTED WORK
           </p>
 
-          {/* HEADING */}
-          <h2 className="mt-5 font-heading text-4xl leading-tight text-black md:text-6xl">
-
+          <h2 className="mt-4 text-3xl md:text-5xl font-heading leading-tight text-black">
             Projects with Love.
-
           </h2>
 
-          {/* DESCRIPTION */}
-          <p className="mt-8 text-lg leading-8 text-black/70">
-
+          <p className="mt-6 text-base leading-7 text-black/70">
             A collection of selected projects crafted through creativity,
             design, and development — transforming ideas into meaningful
-            and interactive digital experiences.
-
+            digital experiences.
           </p>
-
         </div>
 
-        {/* PROJECT SHOWCASE */}
-        <div className="mt-20 overflow-x-auto">
+        {/* SLIDER */}
+        {/* PROJECT SLIDER */}
+<div className="relative mt-16 overflow-hidden">
 
-          <div className="flex w-max gap-10 pb-6">
+  <div
+    className="flex transition-transform duration-500 ease-in-out"
+    style={{
+      transform: `translateX(-${current * 100}%)`,
+    }}
+  >
 
-            {projects.map((project, index) => (
+    {projects.map((project, index) => (
+      <div
+        key={index}
+        className="min-w-full px-4 flex justify-center"
+      >
 
-              <div
-                key={index}
-                className="group w-[340px] flex-shrink-0 md:w-[650px]"
-              >
+        <div
+          className={`w-full max-w-[700px] group transition duration-500 ${
+            current === index
+              ? 'scale-100 opacity-100'
+              : 'scale-95 opacity-60'
+          }`}
+        >
 
-                {/* IMAGE */}
-                <div className="overflow-hidden">
-
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="h-[420px] w-full object-cover transition duration-700 group-hover:scale-105 md:h-[520px]"
-                  />
-
-                </div>
-
-                {/* DETAILS */}
-                <div className="mt-6">
-
-                  <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#3A0519]">
-
-                    {project.category}
-
-                  </p>
-
-                  <h3 className="mt-3 text-3xl font-bold text-black">
-
-                    {project.title}
-
-                  </h3>
-
-                  <p className="mt-4 max-w-xl leading-8 text-black/70">
-
-                    {project.description}
-
-                  </p>
-
-                </div>
-
-              </div>
-
-            ))}
-
+          {/* IMAGE */}
+          <div className="overflow-hidden rounded-[28px]">
+            <img
+              src={project.image}
+              alt={project.title}
+              className="h-[260px] w-full object-cover md:h-[400px]"
+            />
           </div>
+
+          {/* DETAILS */}
+          <div className="mt-6 text-center md:text-left">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#3A0519]">
+              {project.category}
+            </p>
+
+            <h3 className="mt-3 text-2xl md:text-4xl font-bold">
+              {project.title}
+            </h3>
+
+            <p className="mt-4 leading-7 text-black/70">
+              {project.description}
+            </p>
+          </div>
+
+        </div>
+      </div>
+    ))}
+  </div>
+
+</div>
+
+        {/* NAVIGATION */}
+        <div className="mt-10 flex items-center justify-center gap-6">
+
+          {/* LEFT */}
+          <button
+            onClick={prevSlide}
+            className="flex h-10 w-10 items-center justify-center rounded-full border border-[#3A0519] text-[#3A0519] hover:bg-[#3A0519] hover:text-white transition"
+          >
+            <FaArrowLeft />
+          </button>
+
+          {/* DOTS */}
+          <div className="flex gap-3">
+            {projects.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setCurrent(index)}
+                className={`h-3 w-3 rounded-full transition ${
+                  current === index ? 'bg-[#3A0519]' : 'bg-black/20'
+                }`}
+              />
+            ))}
+          </div>
+
+          {/* RIGHT */}
+          <button
+            onClick={nextSlide}
+            className="flex h-10 w-10 items-center justify-center rounded-full border border-[#3A0519] text-[#3A0519] hover:bg-[#3A0519] hover:text-white transition"
+          >
+            <FaArrowRight />
+          </button>
 
         </div>
 
         {/* CTA */}
-        <div className="mt-16 flex justify-center">
-
+        <div className="mt-14 flex justify-center">
           <Link
             to="/projects"
-            className="rounded-full bg-[#3A0519] px-8 py-3 text-sm font-semibold text-white transition duration-300 hover:bg-[#A53860]">
-
+            className="rounded-full bg-[#3A0519] px-6 py-2.5 text-sm font-semibold text-white hover:bg-[#A53860] transition"
+          >
             View All Projects
-
           </Link>
-
         </div>
 
       </div>
-
     </section>
-
   )
 }
 

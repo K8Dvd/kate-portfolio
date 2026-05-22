@@ -9,39 +9,35 @@ import {
 
 import { MdEmail } from 'react-icons/md'
 
-import {
-  motion,
-  useScroll,
-  useTransform,
-} from 'framer-motion'
+import { motion, useScroll, useTransform } from 'framer-motion'
 
 function Hero() {
 
   const { scrollY } = useScroll()
 
-  const leftMove = useTransform(
-    scrollY,
-    [0, 400],
-    [0, -180]
-  )
+   // Horizontal parallax for headings
+  const leftMove = useTransform(scrollY, [0, 500], [0, -200])
+  const rightMove = useTransform(scrollY, [0, 500], [0, 200])
 
-  const rightMove = useTransform(
-    scrollY,
-    [0, 400],
-    [0, 180]
-  )
+  // Vertical parallax for background image
+  const bgY = useTransform(scrollY, [0, 800], [0, -100]) // moves slower than scroll
 
-  const heroOpacity = useTransform(
-    scrollY,
-    [100, 500],
-    [0, 1]
-  )
+  // Fade & scale in content
+  const heroOpacity = useTransform(scrollY, [100, 500], [0, 1])
+  const heroScale = useTransform(scrollY, [100, 500], [0.95, 1])
+  const scrollToContact = () => {
 
-  const heroScale = useTransform(
-    scrollY,
-    [100, 500],
-    [0.95, 1]
-  )
+  const section = document.getElementById('contact')
+
+  if (section) {
+
+    section.scrollIntoView({
+      behavior: 'smooth',
+    })
+
+  }
+
+}
 
   return (
     <section className="relative min-h-[200vh] overflow-hidden bg-white">
@@ -110,13 +106,18 @@ function Hero() {
             {/* BUTTONS */}
             <div className="mt-8 flex flex-wrap justify-center gap-4 md:justify-start">
 
-              <button className="rounded-full bg-[#3A0519] px-7 py-3 text-sm font-semibold text-white transition duration-300 hover:bg-[#A53860]">
+              <a
+                href="/KATEDAVIDRESUME.pdf"
+                download
+                className="rounded-full bg-[#3A0519] px-7 py-3 text-sm font-semibold text-white transition duration-300 hover:bg-[#A53860]">
                 Download Resume
-              </button>
+              </a>
 
-              <button className="rounded-full border border-[#3A0519] px-7 py-3 text-sm font-semibold text-[#3A0519] transition duration-300 hover:bg-[#3A0519] hover:text-white">
+              <button
+                onClick={scrollToContact}
+                className="rounded-full border border-[#3A0519] px-7 py-3 text-sm font-semibold text-[#3A0519] transition duration-300 hover:bg-[#3A0519] hover:text-white">
                 Hire Me
-              </button>
+            </button>
 
             </div>
 

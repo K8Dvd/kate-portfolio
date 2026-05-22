@@ -47,7 +47,9 @@ function Contact() {
 
   return (
 
-    <section className="bg-[#faf7f4] px-6 py-24 md:px-12">
+    <section 
+    id = "contact"
+    className="bg-[#faf7f4] px-6 py-24 md:px-12">
 
       <div className="mx-auto max-w-[1200px]">
 
@@ -71,6 +73,13 @@ function Contact() {
 
             Currently open to job opportunities,
             creative collaborations, and meaningful digital projects.
+
+          </p>
+
+          {/* CONTACTINFORMATION */}
+          <p className="mx-auto mt-8 max-w-3xl text-lg leading-8 text-black/70">
+
+            09651092950 | kateannedavid05@gmail.com
 
           </p>
 

@@ -1,7 +1,8 @@
-import cert1 from '../assets/cert1.jpg'
-import cert2 from '../assets/cert2.jpg'
-import cert3 from '../assets/cert3.jpg'
-import cert4 from '../assets/cert4.jpg'
+import { Link } from 'react-router-dom'
+const masterfullstack = "/certificates/previews/masterfullstack.png";
+import GAC from '/certificates/previews/GAC.png'
+import fcc1 from '/certificates/previews/fcc1.png'
+import SAP from '/certificates/previews/SAP.png'
 import cert5 from '../assets/cert5.jpg'
 
 function Achievements() {
@@ -49,32 +50,32 @@ function Achievements() {
               {/* FLOATING CERTIFICATES */}
 
               <img
-                src={cert1}
+                src={GAC}
                 alt="Certificate"
                 className="absolute left-0 top-0 h-[120px] w-[180px] rotate-[-6deg] object-cover shadow-lg"
               />
 
               <img
-                src={cert2}
+                src={masterfullstack}
                 alt="Certificate"
                 className="absolute right-10 top-10 h-[120px] w-[180px] rotate-[5deg] object-cover shadow-lg"
               />
 
               <img
-                src={cert3}
+                src={fcc1}
                 alt="Certificate"
                 className="absolute left-20 top-44 h-[120px] w-[180px] rotate-[-4deg] object-cover shadow-lg"
               />
 
               <img
-                src={cert4}
+                src={SAP}
                 alt="Certificate"
                 className="absolute right-0 top-56 h-[120px] w-[180px] rotate-[7deg] object-cover shadow-lg"
               />
 
               {/* FEATURED CERTIFICATE */}
               <img
-                src={cert5}
+                src={masterfullstack}
                 alt="Featured Certificate"
                 className="absolute bottom-0 left-1/2 h-[320px] w-[480px] -translate-x-1/2 object-cover shadow-2xl"
               />
@@ -118,11 +119,13 @@ function Achievements() {
             </p>
 
             {/* CTA */}
-            <button className="mt-10 rounded-full bg-[#3A0519] px-8 py-3 text-sm font-semibold text-white transition duration-300 hover:bg-[#A53860]">
+            <Link 
+            to="/achievements"
+            className="mt-10 inline-block rounded-full bg-[#3A0519] px-8 py-3 text-sm font-semibold text-white transition duration-300 hover:bg-[#A53860]">
 
               View All Achievements
 
-            </button>
+            </Link>
 
           </div>
 

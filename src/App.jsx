@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-import Home from './pages/Home'
-import AboutPage from './pages/About'
-import ProjectsPage from './pages/Projects'
-import AchievementsPage from './pages/Achievements'
+import Home from './pages/home'
+import AboutPage from './pages/about'
+import ProjectsPage from './pages/projects'
+import AchievementsPage from './pages/achievements'
 
 function App() {
   return (

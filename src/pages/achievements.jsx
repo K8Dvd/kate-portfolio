@@ -1,5 +1,5 @@
 import Navbar from '../components/navbar'
-import AchievementsExpanded from '../components/achievementsExpanded'
+import AchievementsExpanded from '../components/achievementsexpanded'
 
 function AchievementsPage() {
 

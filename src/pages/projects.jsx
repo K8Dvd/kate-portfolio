@@ -1,5 +1,5 @@
-import Navbar from '../components/Navbar'
-import ProjectsExpanded from '../components/ProjectsExpanded'
+import Navbar from '../components/navbar'
+import ProjectsExpanded from '../components/projectsexpanded'
 
 function ProjectsPage() {
 

@@ -1,4 +1,4 @@
-import Navbar from '../components/Navbar'
+import Navbar from '../components/navbar'
 import project1 from '/projects/marketroots.png'
 import project2 from '/projects/pawtify.png'
 import project3 from '/projects/tasty.png'

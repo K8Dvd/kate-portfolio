@@ -1,5 +1,5 @@
-import Navbar from '../components/Navbar'
-import AboutExpanded from '../components/AboutExpanded'
+import Navbar from '../components/navbar'
+import AboutExpanded from '../components/aboutexpanded'
 
 function AboutPage() {
 

@@ -1,10 +1,10 @@
-import Navbar from '../components/Navbar'
-import Hero from '../components/Hero'
-import About from '../components/About'
-import Projects from '../components/Projects'
-import Achievements from '../components/Achievements'
-import Recommendations from '../components/Recommendations'
-import Contact from '../components/Contact'
+import Navbar from '../components/navbar'
+import Hero from '../components/hero'
+import About from '../components/about'
+import Projects from '../components/projects'
+import Achievements from '../components/achievements'
+import Recommendations from '../components/recommendations'
+import Contact from '../components/contact'
 
 function Home() {
 

@@ -10,27 +10,27 @@ function Recommendations() {
   const testimonials = [
 
     {
-      name: 'Jane Doe',
-      role: 'Frontend Developer',
-      company: 'Creative Studio',
+      name: 'Ms. Jeanky S. Mendez',
+      role: 'EMC Coordinator',
+      company: 'Holy Angel University',
       message:
-        'Kate consistently delivers visually engaging and well-structured designs. Her creativity and attention to detail make every project feel thoughtful and modern.',
+        'You are really putting effort to your works. God bless you.',
     },
 
     {
-      name: 'John Smith',
-      role: 'Project Manager',
-      company: 'Tech Solutions',
+      name: 'EG Delos Santos',
+      role: 'Student Assistant',
+      company: 'Holy Angel University',
       message:
-        'Working with Kate was an excellent experience. She combines creativity with technical skills, creating projects that are both functional and aesthetically impressive.',
+        'Kate has shown persistence in work environments where in she is willing to learn on areas she wants to expand upon such as programming in Java, Python and creative aspects like layouting their outputs and accept feedback from coleagues.',
     },
 
     {
-      name: 'Alex Rivera',
-      role: 'UI/UX Designer',
-      company: 'Digital Agency',
+      name: 'Renz Gabriel Castro',
+      role: 'Student Assistant',
+      company: 'Holy Angel University',
       message:
-        'Kate has a strong eye for design and storytelling. Her ability to transform ideas into interactive digital experiences is truly remarkable.',
+        'Kate never fails to provide excellent support, always paired with a charming smile. Her presence creates a positive and lighthearted working environment.',
     },
 
   ]

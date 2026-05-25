@@ -135,7 +135,7 @@ function AboutExpanded() {
               <div className="absolute -left-[46px] top-2 h-4 w-4 rounded-full bg-[#3A0519]" />
 
               <p className="text-sm text-black/50">
-                2026
+                2026 - Graduated 
               </p>
 
               <h3 className="mt-2 text-2xl font-semibold text-black">
@@ -157,7 +157,7 @@ function AboutExpanded() {
               <div className="absolute -left-[46px] top-2 h-4 w-4 rounded-full bg-[#3A0519]" />
 
               <p className="text-sm text-black/50">
-                Capstone Project
+                2026 | Capstone Project
               </p>
 
               <h3 className="mt-2 text-2xl font-semibold text-black">
@@ -166,13 +166,65 @@ function AboutExpanded() {
 
               <p className="mt-3 max-w-2xl leading-8 text-black/70">
 
-                Worked as a Fullstack Developer & UI/UX Designer using
-                Laravel 11, React.js, and TailwindCSS to build a
-                marketplace platform for Filipino farmers and SMEs.
+                Developed a digital marketplace connecting Filipino farmers
+                and MSMEs using Laravel 11, React.js, Tailwind CSS, and MySQL
+                with features such as OTP authentication, real-time messaging,
+                and role-based management.
 
               </p>
 
             </div>
+
+            {/* ITEM */}
+            <div className="relative">
+
+              <div className="absolute -left-[46px] top-2 h-4 w-4 rounded-full bg-[#3A0519]" />
+
+              <p className="text-sm text-black/50">
+                July 2025 — October 2025
+              </p>
+
+              <h3 className="mt-2 text-2xl font-semibold text-black">
+                Technical Designer Intern — Hooli Software
+              </h3>
+
+              <p className="mt-3 max-w-2xl leading-8 text-black/70">
+
+                 Assisted in designing responsive landing pages, improving
+                UI/UX experiences, creating graphic assets, and collaborating
+                with the CEO and Lead Technical Designer on client projects
+                and business visibility improvements
+
+              </p>
+
+            </div>
+
+
+           {/* ITEM */}
+            <div className="relative">
+
+              <div className="absolute -left-[46px] top-2 h-4 w-4 rounded-full bg-[#3A0519]" />
+
+              <p className="text-sm text-black/50">
+                2022 - 2026
+              </p>
+
+              <h3 className="mt-2 text-2xl font-semibold text-black">
+                Student Assistant — Holy Angel University
+              </h3>
+
+              <p className="mt-3 max-w-2xl leading-8 text-black/70">
+
+                Supported multiple university departments through technical
+                assistance, documentation, event coordination, graphic design,
+                records management, and administrative support while balancing
+                academic responsibilities.
+
+              </p>
+
+            </div>
+
+
 
           </div>
 

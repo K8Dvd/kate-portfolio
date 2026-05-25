@@ -97,14 +97,14 @@ function Achievements() {
             {/* TITLE */}
             <h3 className="mt-5 text-4xl font-bold leading-tight text-black">
 
-              Placeholder Achievement Title
+              Master Fullstack Web Development Certification
 
             </h3>
 
             {/* SUBTITLE */}
             <p className="mt-4 text-lg font-semibold text-black/70">
 
-              Organization · Year
+              GreatLearning · 2024
 
             </p>
 

@@ -2,25 +2,25 @@ import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'
 
-import marketroots from '/projects/marketroots.png'
-import project2 from '../assets/project2.jpg'
-import project3 from '../assets/project3.jpg'
+import project1 from '/projects/marketroots.png'
+import project2 from '/projects/pawtify.png'
+import project3 from '/projects/tasty.png'
 
 function Projects() {
   const projects = [
     {
-      image: marketroots,
-      title: 'Portfolio Website',
-      category: 'Frontend Development',
+      image: project1,
+      title: 'MarketRoots',
+      category: 'Web Application',
       description:
-        'A visually expressive portfolio focused on interactive storytelling and modern web experiences.',
+        'A Digital Marketplace to Connect Filipino Farmers to Small and Medium Enterprises in Angeles City, Pampanga.',
     },
     {
       image: project2,
-      title: 'Student Management System',
+      title: 'Pawtify',
       category: 'Web Application',
       description:
-        'A responsive academic management platform designed for organization, usability, and efficiency.',
+        'Pawtify is a decentralized pet registry and vaccination tracking platform that stores pet records securely on the Ethereum blockchain.',
     },
     {
       image: project3,
@@ -57,7 +57,7 @@ function Projects() {
 
           <p className="mt-6 text-base leading-7 text-black/70">
             A collection of selected projects crafted through creativity,
-            design, and development — transforming ideas into meaningful
+            design, and development, transforming ideas into meaningful
             digital experiences.
           </p>
         </div>

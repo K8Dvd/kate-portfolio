@@ -1,7 +1,7 @@
 import Navbar from '../components/Navbar'
-import project1 from '../assets/project1.jpg'
-import project2 from '../assets/project2.jpg'
-import project3 from '../assets/project3.jpg'
+import project1 from '/projects/marketroots.png'
+import project2 from '/projects/pawtify.png'
+import project3 from '/projects/tasty.png'
 
 function ProjectsPage() {
 
@@ -10,15 +10,17 @@ function ProjectsPage() {
     {
       title: 'MarketRoots',
       description:
-        'A digital marketplace connecting Filipino farmers with small and medium enterprises in Angeles City, Pampanga. Built with a focus on accessibility, usability, and modern marketplace interaction.',
+        'MarketRoots is a web-based digital marketplace that connects Filipino farmers with MSMEs in Angeles City, Pampanga through direct product listings, real-time messaging, OTP authentication, and role-based marketplace management.',
 
       role: 'Fullstack Developer & UI/UX Designer',
 
       tech: [
         'Laravel 11',
         'React.js',
-        'TailwindCSS',
+        'Tailwind CSS',
         'MySQL',
+        'REST API',
+        'OTP Authentication',
       ],
 
       image: project1,
@@ -31,16 +33,22 @@ function ProjectsPage() {
     },
 
     {
-      title: 'Creative Portfolio',
+      title: 'Pawtify',
       description:
-        'A modern editorial-style portfolio focused on storytelling, interaction, and clean frontend experiences showcasing projects, achievements, and creative development work.',
+        'Pawtify is a blockchain-based pet registry and vaccination tracking system that securely stores pet ownership and vaccination records on the Ethereum blockchain, providing transparent and tamper-proof record management for LGUs, veterinarians, and pet owners.Pawtify is a decentralized pet registry and vaccination tracking platform that stores pet records securely on the Ethereum blockchain.',
 
       role: 'Frontend Developer & UI/UX Designer',
 
       tech: [
         'React.js',
-        'TailwindCSS',
+        'Tailwind CSS',
         'Framer Motion',
+        'Solidity',
+        'Ethers.js',
+        'Hardhat',
+        'Ganache',
+        'Ethereum',
+        'MetaMask',
       ],
 
       image: project2,
@@ -49,28 +57,32 @@ function ProjectsPage() {
 
       live: true,
 
-      link: '/',
+      link: 'https://pawtify.netlify.app/',
     },
 
     {
-      title: 'Future Project',
-      description:
-        'A placeholder for upcoming creative and technology-driven experiences, experiments, and frontend explorations currently in development.',
+      title: 'Tasty Bites',
 
-      role: 'Creative Developer',
+      description:
+        'Tasty Bites is a food and recipe blog website built using WordPress.com, featuring responsive layouts, recipe-focused content presentation, and a clean user-friendly interface designed for browsing food articles and recipes.',
+
+      role: 'Web Designer & Content Creator',
 
       tech: [
-        'OpenAI',
-        'Node.js',
-        'React.js',
+        'WordPress',
+        'WordPress.com',
+        'CSS',
+        'Responsive Design',
       ],
 
       image: project3,
 
-      status: 'In Development',
+      status: 'Personal Project',
 
-      live: false,
-    },
+      live: true,
+
+      link: 'https://tastybites06.wordpress.com/',
+},
 
   ]
 

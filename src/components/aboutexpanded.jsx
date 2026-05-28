@@ -6,7 +6,7 @@ function AboutExpanded() {
       'Angular',
       'React.js',
       'Vue.js',
-      'Svelte',
+      'Wordpress',
       'TypeScript',
       'JavaScript',
       'HTML5',

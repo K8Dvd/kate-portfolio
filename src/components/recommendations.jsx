@@ -41,6 +41,14 @@ function Recommendations() {
         'Collaborating with Kate made me realize how hardworking and determined she is. She is always eager to get the job done and consistently gives her best effort in every task. Her dedication and willingness to learn are qualities that every developer should strive to have when entering the industry.',
     },
 
+    {
+      name: 'Alexander Atencio',
+      role: 'Network Security Engineer',
+      company: 'rends and Technologies Inc.',
+      message:
+        'Lablab hon hon koooooooo',
+    },
+
 
   ]
 

@@ -44,7 +44,7 @@ function Recommendations() {
     {
       name: 'Alexander Atencio',
       role: 'Network Security Engineer',
-      company: 'rends and Technologies Inc.',
+      company: 'Trends and Technologies Inc.',
       message:
         'Lablab hon hon koooooooo',
     },

@@ -104,7 +104,7 @@ function Navbar() {
 
             {/* RESUME */}
             <a
-              href="/KATEDAVIDRESUME.pdf"
+              href="/KATEANNEDAVIDRESUME.pdf"
               download
               className="hidden rounded-full bg-[#3A0519] px-6 py-2 text-sm font-semibold text-white transition hover:bg-[#A53860] md:block"
             >

@@ -3,6 +3,21 @@ function AchievementsExpanded() {
   const certificates = [
 
     {
+      title: 'Developing Designs for User Interface',
+
+      issuer: 'TESDA',
+
+      year: '2024',
+
+
+      image: '/certificates/previews/tesda.png',
+
+      credential:
+        '/certificates/tesda.pdf',
+    },
+
+
+    {
       title: 'React JS Tutorial',
 
       issuer: 'Greatlearning',

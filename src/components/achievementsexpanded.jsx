@@ -384,19 +384,7 @@ function AchievementsExpanded() {
         'https://www.freecodecamp.org/certification/kateanne/javascript-algorithms-and-data-structures',
     },
 
-    {
-      title: 'Legacy Responsive Web Design V7',
-
-      issuer: 'freecodecamp',
-
-      year: '2024',
-
-      image: '/certificates/previews/fcc2.png',
-
-      credential:
-        'https://www.freecodecamp.org/certification/kateanne/responsive-web-design',
-    },
-
+    
     {
       title: 'Legacy Responsive Web Design V7',
 

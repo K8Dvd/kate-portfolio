@@ -199,6 +199,31 @@ function AboutExpanded() {
 
             </div>
 
+            {/* ITEM */}
+            <div className="relative">
+
+              <div className="absolute -left-[46px] top-2 h-4 w-4 rounded-full bg-[#3A0519]" />
+
+              <p className="text-sm text-black/50">
+                Jan 2025 — Apr 2025
+              </p>
+
+              <h3 className="mt-2 text-2xl font-semibold text-black">
+                WordPress Website Developer & Content Assistant — 3D Printed Things
+              </h3>
+
+              <p className="mt-3 max-w-2xl leading-8 text-black/70">
+
+                Co-developed and maintained a WordPress-based website for a 3D printing business,
+                contributing to site structure, layout, and overall setup. Assisted in implementing basic coding
+                for page components and order page functionality. Created and published weekly blog content to
+                support SEO and improve organic traffic, while also helping monitor website analytics such as
+                traffic, user behavior, and engagement trends to guide content improvements.
+
+              </p>
+
+            </div>
+
 
            {/* ITEM */}
             <div className="relative">

@@ -107,7 +107,7 @@ function Hero() {
             <div className="mt-8 flex flex-wrap justify-center gap-4 md:justify-start">
 
               <a
-                href="/KATEDAVIDRESUME.pdf"
+                href="/KATEANNEDAVIDRESUME.pdf"
                 download
                 className="rounded-full bg-[#3A0519] px-7 py-3 text-sm font-semibold text-white transition duration-300 hover:bg-[#A53860]">
                 Download Resume
